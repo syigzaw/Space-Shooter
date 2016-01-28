@@ -3,8 +3,11 @@ html, body {
 	height: 100%
 }
 body {
-	position: relative;
+	width: 100%;
+	height: 100%
+	position: absolute;
 	margin: 0px;
+	padding: 0px;
 	overflow: hidden;
 }
 img {
@@ -18,7 +21,7 @@ img {
 	width: 100%;
 	position: absolute
 }
-canvas, #objArena, #you {
+#objArena, #you {
 	position: absolute
 }
 #objArena > div {
@@ -27,13 +30,9 @@ canvas, #objArena, #you {
 }
 #objArena > .enemy > img {
 	position: absolute;
-	left: -50px;
-	top: -25px;
 }
 #you > img {
 	position: absolute;
-	left: -57.5px;
-	top: -25px;
 }
 .enemyShot {
 	position: absolute;
@@ -49,12 +48,29 @@ canvas, #objArena, #you {
 	border-radius: 50%;
 	background-color: red;
 }
-#y {
-	top: 150px;
+#titleDisplay {
+	left: 30%;
+	right: 30%;
+	width: 40%;
+	z-index: 5;
+	position: absolute;
+	color: yellow;
 }
-#x2 {
-	top: 300px;
+h1 {
+	text-align: center;
 }
-#y2 {
-	top: 450px;
+#statsDisplay {
+	z-index: 5;
+	position: absolute;
+	color: yellow;
+}
+.explosion {
+	position: absolute;
+	z-index: 15;
+}
+.playAgain {
+	position: absolute;
+	top: 100px;
+	z-index: 5;
+	width: 100%;
 }
