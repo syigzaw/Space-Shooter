@@ -3,35 +3,33 @@ html, body {
 	height: 100%
 }
 body {
-	width: 100%;
-	height: 100%
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
 }
-img {
+img, h1, h3,  p {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 #space {
 	width: 100%;
+	height: auto;
+	position: absolute;
+}
+#objArena {
 	position: absolute
 }
-#objArena, #you {
-	position: absolute
-}
-#objArena > div {
+#objArena > div, #you, #player1, #player2, #youImg, #player1Img, #player2Img {
 	position: absolute;
 	z-index: 10;
 }
 #objArena > .enemy > img {
-	position: absolute;
-}
-#you > img {
 	position: absolute;
 }
 .enemyShot {
@@ -49,12 +47,29 @@ img {
 	background-color: red;
 }
 #titleDisplay {
-	left: 30%;
-	right: 30%;
-	width: 40%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
 	z-index: 5;
 	position: absolute;
 	color: yellow;
+}
+#title {
+	text-align: center;
+	font-size: 7em;
+	font-weight: bold;
+	position: relative;
+	margin: 10px;
+}
+#singleplayerDiv {
+	width: 40%;
+	position: relative;
+	float: left;
+}
+#multiplayerDiv {
+	width: 40%;
+	position: relative;
+	float: right;
 }
 h1 {
 	text-align: center;
@@ -64,13 +79,27 @@ h1 {
 	position: absolute;
 	color: yellow;
 }
+#singleplayer, #multiplayer {
+	position: relative;
+	margin: 10px;
+}
+#wasd1, #mouse, #wasd2, #spacebar, #arrows, #enter {
+	position: relative;
+	width: 45%;
+	margin: 5px;
+}
+#wasd1, #wasd2, #arrows  {
+	float: left;
+}
+#mouse, #spacebar, #enter  {
+	float: right;
+}
 .explosion {
 	position: absolute;
 	z-index: 15;
 }
 .playAgain {
 	position: absolute;
-	top: 100px;
 	z-index: 5;
 	width: 100%;
 }
